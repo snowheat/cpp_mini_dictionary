@@ -12,15 +12,32 @@ class Model {
 public:
     Model();
 
-    void ambil();
+    unsigned char getGrafKamus(int i);
+    void setGrafKamus(int i, int value);
 
-    unsigned char grafKamus[256*256];
-
-private:
-    bool tersedia(const char string[12]);
+    int getPointerKontenPertama();
+    int getPointer();
+    void setPointer(int value);
 
     int getPanjangGrafKamus();
+    void ambil();
 
+    int getPointerMulaiMenulis();
+    void setPointerMulaiMenulis(int alamat);
+
+    int getPointerHurufPertamaPeriksa();
+    void setPointerHurufPertamaPeriksa(int alamat);
+
+    int getPointerAlamatTujuan(int alamatA, int alamatB);
+    void setPointerAlamatTujuan(int alamatA, int alamatB, int alamatTujuan);
+
+    void tulisGrafKamusKeFile();
+
+private:
+    unsigned char grafKamus[256*256] = {};
+    int pointer;
+
+    bool tersedia(const char string[12]);
 
 };
 

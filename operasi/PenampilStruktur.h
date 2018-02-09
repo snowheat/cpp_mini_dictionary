@@ -5,9 +5,16 @@
 #ifndef TUGAS3_PENAMPILSTRUKTUR_H
 #define TUGAS3_PENAMPILSTRUKTUR_H
 
+#include "../Model.h"
 
 class PenampilStruktur {
 
+public:
+    PenampilStruktur();
+
+    void tampilkanMenu(Model *pModel);
+
+    void tampilkanStrukturKamus(Model *pModel);
 };
 
 

@@ -6,8 +6,14 @@
 #define TUGAS3_PENGUBAHKATA_H
 
 
+#include "../Model.h"
+
 class PengubahKata {
 
+public:
+    PengubahKata();
+
+    void tampilkanMenu(Model *pModel);
 };
 
 

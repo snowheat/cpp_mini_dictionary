@@ -17,14 +17,15 @@ class Kamus {
 public:
     Kamus();
     void buka();
+    Model model;
 
 private:
-    Model model;
     PenerjemahKalimat penerjemahKalimat;
     PenambahKata penambahKata;
     PengubahKata pengubahKata;
     PenghapusKata penghapusKata;
     PenampilStruktur penampilStruktur;
+
 
     int nomorMenu;
 
